@@ -19,7 +19,7 @@ The site is indeed to keep track of events the day of the events. You can type e
 
 Link to the website deployed on GitHub Pages: https://mforte215.github.io/js-fundamentals-quiz/
 
-Link to the code repository on GitHub: https://github.com/mforte215/js-fundamentals-quiz
+Link to the code repository on GitHub: https://github.com/mforte215/work-day-planner
 
 A screenshot of the current site:
 ![Screenshot of the current online site with the lay of the page displayed](./assets/images/quiz-game-js.png)

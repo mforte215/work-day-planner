@@ -86,6 +86,11 @@ $(function () {
         let currentDayString = foundDay + " " + foundMonth + " " + dayNum + ", " + year;
         const currentDateParagraph = $('#currentDay');
         currentDateParagraph.text(currentDayString);
+        let lastUpdate = localStorage.getItem("Last Update");
+        if (lastUpdate) {
+            $("#lastUpdated").text("Last Update: " + lastUpdate);
+        }
+
     }
 
     setDateHeader()
@@ -106,6 +111,10 @@ $(function () {
         }
 
         localStorage.setItem(hourId, storedEvent);
+        const currentDate = dayjs();
+        const formattedDate = currentDate.format('YYYY-MM-DD HH:mm:ss');
+        localStorage.setItem("Last Update", formattedDate);
+        $("#lastUpdated").text("Last Update: " + formattedDate);
     })
 
     const loadSavedEvents = () => {
@@ -116,6 +125,7 @@ $(function () {
                 $('#' + hourId).children('textarea').val(foundEvent);
             }
         }
+
     }
 
     const setColorBlocks = () => {
