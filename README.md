@@ -17,12 +17,12 @@ N/A
 
 The site is indeed to keep track of events the day of the events. You can type events into the calender and save them using the blue button on the right side of the hour tiles. Past hours will be greyed out, present hours will be presented in red, and future hours will be shown in green. The site utilizes localstorage to get and set the hourly events so the user may exit and return to the site with their events still saved.
 
-Link to the website deployed on GitHub Pages: https://mforte215.github.io/js-fundamentals-quiz/
+Link to the website deployed on GitHub Pages: https://mforte215.github.io/work-day-planner/
 
-Link to the code repository on GitHub: https://github.com/mforte215/work-day-planner
+Link to the code repository on GitHub: https://github.com/mforte215/work-day-planner/
 
 A screenshot of the current site:
-![Screenshot of the current online site with the lay of the page displayed](./assets/images/quiz-game-js.png)
+![Screenshot of the current online site with the lay of the page displayed](./assets/images/work-day-planner.png)
 
 ## Credits
 
