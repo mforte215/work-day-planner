@@ -131,29 +131,19 @@ $(function () {
 
 
     const loadSavedEvents = () => {
-        console.log(localStorage);
         for (let i = 9; i < 18; i++) {
-            let hourId = '#hour-' + i;
+            let hourId = 'hour-' + i;
             let foundEvent = localStorage.getItem(hourId);
             if (foundEvent) {
-                console.log("I found event for this hour");
-                $(hourId).children()
-            }
-            else {
-                console.log("I did not find an event for this hour");
+                $('#' + hourId).children('textarea').val(foundEvent);
             }
         }
-
-
-
-
     }
 
 
 
     const setColorBlocks = () => {
         let currentHour = now.hour();
-        console.log(now.hour());
 
         for (let i = 9; i < 18; i++) {
             if (i < currentHour) {
