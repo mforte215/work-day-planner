@@ -15,7 +15,7 @@ N/A
 
 ## Usage
 
-The site is indeed to keep track of events the day of the events. You can type events into the calender and save them using the blue button on the right side of the hour tiles. Past hours will be greyed out, present hours will be presented in red, and future hours will be shown in green. The site utilizes localstorage to get and set the hourly events so the user may exit and return to the site with their events still saved.
+The site is intended to keep track of events the day of the events. You can type events into the calender and save them using the blue button on the right side of the hour tiles. Past hours will be greyed out, present hours will be presented in red, and future hours will be shown in green. The site utilizes localstorage to get and set the hourly events so the user may exit and return to the site with their events still saved.
 
 Link to the website deployed on GitHub Pages: https://mforte215.github.io/work-day-planner/
 
