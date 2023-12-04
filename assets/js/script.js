@@ -1,7 +1,7 @@
 $(function () {
-
+    //create a dayjs object to manipulate the dates
     let now = dayjs()
-
+    //wrote this before I realized you could just do day.format('dddd')
     const setWeekDay = (dayNum) => {
         let weekday;
         switch (dayNum) {
@@ -73,9 +73,11 @@ $(function () {
 
     }
 
-    const rootEl = $('#root');
+    //get ref to save button to attach listener
     const saveBtn = $('.saveBtn')
 
+
+    //set the date in the header
     const setDateHeader = () => {
         const weekNum = now.day();
         const dayNum = now.date();
@@ -94,7 +96,7 @@ $(function () {
     }
 
     setDateHeader()
-
+    //attach a listener to the click so that events can be saved on click
     saveBtn.on("click", (event) => {
         console.log($(event.target).parent());
         let parentElement = $(event.target).parent();
@@ -117,6 +119,8 @@ $(function () {
         $("#lastUpdated").text("Last Update: " + formattedDate);
     })
 
+
+    //on page load check to see if events exist and put them in the right place if they do
     const loadSavedEvents = () => {
         for (let i = 9; i < 18; i++) {
             let hourId = 'hour-' + i;
@@ -127,7 +131,7 @@ $(function () {
         }
 
     }
-
+    //check what hour it is and set the blocks accordingly
     const setColorBlocks = () => {
         let currentHour = now.hour();
 
